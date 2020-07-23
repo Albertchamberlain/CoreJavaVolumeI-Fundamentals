@@ -23,14 +23,14 @@ public class CompoundInterest {
                 }
             }
             for (double interestRate : interestRates) {
-                System.out.println("%9.0f%%" + interestRate * 100);
+                System.out.printf("%9.0f%%" + interestRate * 100);
             }
             System.out.println();
 
             for (double[] row:balance) {
-                for (double b :row
-                     ) {
-                    System.out.println("%10.2f" + b);
+                for (double b :row)
+                {
+                    System.out.printf("%10.2f",b);
                 }
                 System.out.println();
             }
