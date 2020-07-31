@@ -1,5 +1,8 @@
 package javabasestructure;
 
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 /**
  * @author Amos
  * @date 7/23/2020 10:43 PM
@@ -54,10 +57,14 @@ public class ParamTT {
 class Employeee{
     private String name;
     private double salary;
-
+    private  Date hireDay;
     public Employeee(String name, double salary) {
         this.name = name;
         this.salary = salary;
+    }
+
+    public void setHireDay(Date hireDay) {
+        this.hireDay = hireDay;
     }
 
     public String getName() {
@@ -89,5 +96,18 @@ class Employeee{
     public void raiseSalary(double byPercent){
         double raise = salary*byPercent/100;
         salary += raise;
+    }
+
+    public void setHireDay(int i, int i1, int i2) {
+        Date newHireday  = new GregorianCalendar(i,i1 - 1,i2).getTime();
+        hireDay.setTime(newHireday.getTime());
+    }
+
+    @Override
+    public Employeee clone( ) throws  CloneNotSupportedException{
+        Employeee cloned = (Employeee) super.clone();
+
+        cloned.hireDay = (Date)hireDay.clone();
+        return cloned;
     }
 }
