@@ -14,7 +14,6 @@ public class StackTraceTT {
             facor(n);
         }
     }
-
     private static void  facor(int n) {
         System.out.println("n = " + n);
 
