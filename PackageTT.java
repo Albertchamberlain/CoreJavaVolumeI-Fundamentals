@@ -1,6 +1,3 @@
-package javabasestructure;
-
-import jdk.nashorn.internal.objects.Global;
 
 import static java.lang.System.out;
 
@@ -10,7 +7,7 @@ import static java.lang.System.out;
  */
 public class PackageTT {
     public static void main(String[] args) {
-        Employee harry_hacker = new Employee("Harry hacker", 5000, 1989, 10, 1);
+        javabasestructure.Employee harry_hacker = new javabasestructure.Employee("Harry hacker", 5000, 1989, 10, 1);
         harry_hacker.raiseSalary(2);
 
         out.println("harry_hacker = " + harry_hacker.getSalary()+harry_hacker.getName());
