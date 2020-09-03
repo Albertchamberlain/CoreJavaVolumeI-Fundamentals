@@ -1,4 +1,3 @@
-package javabasestructure;
 
 import java.util.ArrayList;
 
@@ -8,15 +7,15 @@ import java.util.ArrayList;
  */
 public class ArraayListTT {
     public static void main(String[] args) {
-        ArrayList<Employee> employees = new ArrayList<>();
-        employees.add(new Employee("Amos",1950));
-        employees.add(new Employee("Jack",1834));
-        employees.add(new Employee("Atas",1432));
-        for (Employee employee:employees
+        ArrayList<javabasestructure.Employee> employees = new ArrayList<>();
+        employees.add(new javabasestructure.Employee("Amos",1950));
+        employees.add(new javabasestructure.Employee("Jack",1834));
+        employees.add(new javabasestructure.Employee("Atas",1432));
+        for (javabasestructure.Employee employee:employees
              ) {
             employee.raiseSalary(4);
         }
-        for (Employee employee:employees
+        for (javabasestructure.Employee employee:employees
              ) {
             System.out.println("employee = " + employee.getSalary()+employee.getHireDay()+ employee.getName());
         }
