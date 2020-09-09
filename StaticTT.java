@@ -6,19 +6,19 @@ package javabasestructure;
  */
 public class StaticTT {
     public static void main(String[] args) {
-        Employee[] staff = new Employee[3];
-        staff[0] = new Employee("tom",134);
-        staff[1] = new Employee("Vat",134);
-        staff[2] = new Employee("Amos",134);
+        javabasestructure.Employee[] staff = new javabasestructure.Employee[3];
+        staff[0] = new javabasestructure.Employee("tom",134);
+        staff[1] = new javabasestructure.Employee("Vat",134);
+        staff[2] = new javabasestructure.Employee("Amos",134);
 
 
-        for (Employee employee:staff
+        for (javabasestructure.Employee employee:staff
              ) {
             employee.setId();
             System.out.println("employee.toString() = " + employee.toString());
         }
 
-        int n = Employee.getNextId() ;
+        int n = javabasestructure.Employee.getNextId() ;
         System.out.println("n = " + n);
     }
 }
